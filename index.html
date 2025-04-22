@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geladinho Gourmet</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to bottom, #fde9ec, #d3e9f9);
+      margin: 0;
+      padding: 0;
+      color: #5a3e36;
+    }
+    header {
+      background: #ffe4ec;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 200px;
+    }
+    nav {
+      background: #fadadd;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #5a3e36;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .product {
+      background: #fff0f4;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .buy-button {
+      display: block;
+      margin-top: 10px;
+      padding: 10px;
+      background: #ffafcc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      background: #ffd6e0;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    .payment-options {
+      margin-top: 15px;
+    }
+    .payment-options img {
+      height: 50px;
+      margin: 10px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, textarea {
+      padding: 10px;
+      margin: 5px 0;
+      width: 80%;
+      max-width: 400px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #ffafcc;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/logo.png" alt="Geladinho Gourmet Logo">
+  </header>
+
+  <nav>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#tienda">Tienda</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="section" id="catalogo">
+    <h2>¡Descubre nuestros productos!</h2>
+    <p>Sombrillas, gorras, sombreros y polos con el estilo más fresco y divertido.</p>
+    <div class="products">
+      <div class="product">
+        <img src="assets/gorra-fresa.jpg" alt="Gorra Fresa">
+        <h3>Gorra Fresa</h3>
+        <p>Sutil, dulce y perfecta para el sol.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tienda">
+    <h2>Tienda Online</h2>
+    <div class="products">
+      <div class="product">
+        <img src="assets/gorra-fresa.jpg" alt="Gorra Fresa">
+        <h3>Gorra Fresa</h3>
+        <p>S/.39.00</p>
+        <a href="#contacto" class="buy-button">Pagar con Yape / Plin</a>
+      </div>
+    
+      <div class="product">
+        <img src="assets/sombrilla-color.jpg" alt="Sombrilla de colores">
+        <h3>Sombrilla Arcoíris</h3>
+        <p>S/.55.00</p>
+        <a href="#contacto" class="buy-button">Pagar con Yape / Plin</a>
+      </div>
+      <div class="product">
+        <img src="assets/polo-verano.jpg" alt="Polo Verano">
+        <h3>Polo Verano</h3>
+        <p>S/.45.00</p>
+        <a href="#contacto" class="buy-button">Pagar con Yape / Plin</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <h3>Contacto y Pagos</h3>
+    <p>Escríbenos para coordinar tu compra:</p>
+    <form>
+      <input type="text" placeholder="Tu nombre" required><br>
+      <input type="email" placeholder="Tu correo" required><br>
+      <textarea rows="4" placeholder="Mensaje o pedido..."></textarea><br>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="payment-options">
+      <p>Paga con:</p>
+      <img src="assets/yape.png" alt="Yape">
+      <img src="assets/plin.png" alt="Plin">
+      <img src="assets/paypal.png" alt="PayPal">
+    </div>
+    <p>Geladinho Gourmet © 2025 | Hecho con amor y frescura.</p>
+  </footer>
+
+</body>
+</html>
